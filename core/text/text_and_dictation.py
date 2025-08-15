@@ -65,7 +65,7 @@ def prose_modifier(m) -> Callable:
 
 
 @mod.capture(
-    rule="<user.number_string> [(dot | point) <digit_string>] percent [sign|sine]"
+    rule="<user.number_string> [dot <digit_string>] percent [sign|sine]"
 )
 def prose_percent(m) -> str:
     s = m.number_string
